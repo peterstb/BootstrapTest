@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Example of Twitter Bootstrap 3 Buttons Sizes</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+    $(".nav-tabs a").click(function(){
+        $(this).button('loading').delay(500).queue(function(){
+            $(this).button('reset');
+            $(this).dequeue();
+        });        
+    });
+});
+</script>
+<style type="text/css">
+	.nav a{
+        outline: none;
+    }
+    .bs-example{
+    	margin: 20px;
+    }
+</style>
+
+</head>
+<body>
+<div class="bs-example">
+    <button type="button" class="btn btn-default btn-lg">Default</button>
+    <button type="button" class="btn btn-primary btn-lg">Primary</button>
+    <button type="button" class="btn btn-info btn-lg">Info</button>
+    <button type="button" class="btn btn-success btn-lg">Success</button>
+    <button type="button" class="btn btn-warning btn-lg">Warning</button>
+    <button type="button" class="btn btn-danger btn-lg">Danger</button>
+    <hr>
+    <button type="button" class="btn btn-default">Default</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <hr> 
+    <button type="button" class="btn btn-default btn-sm">Default</button>
+    <button type="button" class="btn btn-primary btn-sm">Primary</button>
+    <button type="button" class="btn btn-info btn-sm">Info</button>
+    <button type="button" class="btn btn-success btn-sm">Success</button>
+    <button type="button" class="btn btn-warning btn-sm">Warning</button>
+    <button type="button" class="btn btn-danger btn-sm">Danger</button>
+    <hr>
+    <button type="button" class="btn btn-default btn-xs">Default</button>
+    <button type="button" class="btn btn-primary btn-xs">Primary</button>
+    <button type="button" class="btn btn-info btn-xs">Info</button>
+    <button type="button" class="btn btn-success btn-xs">Success</button>
+    <button type="button" class="btn btn-warning btn-xs">Warning</button>
+    <button type="button" class="btn btn-danger btn-xs">Danger</button>
+	
+    <a href="#" class="btn btn-default btn-lg disabled">Default</a>
+    <a href="#" class="btn btn-primary btn-lg disabled">Primary</a>
+    <a href="#" class="btn btn-info btn-lg disabled">Info</a>
+    <a href="#" class="btn btn-success btn-lg disabled">Success</a>
+    <a href="#" class="btn btn-warning btn-lg disabled">Warning</a>
+    <a href="#" class="btn btn-danger btn-lg disabled">Danger</a>
+
+    <button type="button" class="btn btn-default" data-loading-text="Loading ...">Default</button>
+    <button type="button" class="btn btn-primary" data-loading-text="Loading...">Primary</button>
+    <button type="button" class="btn btn-info" data-loading-text="Loading...">Info</button>
+    <button type="button" class="btn btn-success" data-loading-text="Loading...">Success</button>
+    <button type="button" class="btn btn-warning" data-loading-text="Loading...">Warning</button>
+    <button type="button" class="btn btn-danger" data-loading-text="Loading...">Danger</button>
+    <button type="button" class="btn btn-link" data-loading-text="Loading...">Link</button>
+
+    <button type="button" class="btn btn-default" data-toggle="button">Default</button>
+    <button type="button" class="btn btn-primary" data-toggle="button">Primary</button>
+    <button type="button" class="btn btn-info" data-toggle="button">Info</button>
+    <button type="button" class="btn btn-success" data-toggle="button">Success</button>
+    <button type="button" class="btn btn-warning" data-toggle="button">Warning</button>
+    <button type="button" class="btn btn-danger" data-toggle="button">Danger</button>
+    <button type="button" class="btn btn-link" data-toggle="button">Link</button>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+            <input type="checkbox"> Option 1
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox"> Option 2
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox"> Option 3
+        </label>
+    </div>
+
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="radio" name="options" id="option1"> Option 1
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option2"> Option 2
+        </label>
+        <label class="btn btn-primary">
+            <input type="radio" name="options" id="option3"> Option 3
+        </label>
+    </div>
+
+    <div class="tabbable">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#tab1" data-loading-text="Loading...">Section 1</a></li>
+            <li><a data-toggle="tab" href="#tab2" data-loading-text="Loading...">Section 2</a></li>
+            <li><a data-toggle="tab" href="#tab3" data-loading-text="Loading...">Section 3</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="tab1" class="tab-pane active fade in">
+            <p>Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi.</p>
+            </div>
+            <div id="tab2" class="tab-pane fade">
+            <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing. Duis auctor dictum erat hendrerit dapibus. </p>
+            </div>
+            <div id="tab3" class="tab-pane fade">
+            <p>WInteger convallis, nulla in sollicitudin placerat, ligula enim auctor lectus, in mollis diam dolor at lorem. Sed bibendum nibh sit amet dictum feugiat. Vivamus arcu sem, cursus a feugiat ut, iaculis at erat. Donec vehicula at ligula vitae venenatis. Sed nunc nulla, vehicula non porttitor in, pharetra et dolor. Fusce nec velit velit. Pellentesque consectetur eros nec interdum varius. Quisque at mi dolor.</p>
+            </div>
+        </div>
+    </div>	
+	
+</div>
+</body>
+</html>                                		
